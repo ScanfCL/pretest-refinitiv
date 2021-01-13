@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import hoist from "hoist-non-react-statics";
 
-export function withMainPage(Component) {
-  function WithMainPage(props) {
+export function withQuestion1(Component) {
+  function WithQuestion1(props) {
     const [input, setInput] = useState("");
     const [calculate, setCalculate] = useState("isPrime");
     const [result, setResult] = useState(null);
@@ -84,11 +84,11 @@ export function withMainPage(Component) {
     return <Component {...props} {...newProps} />;
   }
 
-  hoist(WithMainPage, Component);
+  hoist(WithQuestion1, Component);
 
-  WithMainPage.displayName = `withMainPage(${
+  WithQuestion1.displayName = `withQuestion1(${
     Component.displayName ?? Component.name ?? "Component"
   })`;
 
-  return WithMainPage;
+  return WithQuestion1;
 }

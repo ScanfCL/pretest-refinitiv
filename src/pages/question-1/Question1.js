@@ -7,7 +7,7 @@ import { Select } from "../../components/Select/Select";
 
 const options = ["isPrime", "isFibonacci"];
 
-const MainPage = ({
+const Question1 = ({
   className,
   input,
   onChangeInput,
@@ -38,7 +38,7 @@ const MainPage = ({
   );
 };
 
-const StyledMainPage = styled(MainPage)`
+const StyledQuestion1 = styled(Question1)`
   display: flex;
   min-width: 600px;
   overflow-x: scroll;
@@ -68,4 +68,4 @@ const StyledMainPage = styled(MainPage)`
   }
 `;
 
-export { StyledMainPage as MainPage };
+export { StyledQuestion1 as Question1 };
